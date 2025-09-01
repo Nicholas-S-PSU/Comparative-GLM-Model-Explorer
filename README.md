@@ -1,6 +1,8 @@
 # Comparative-GLM-Model-Explorer
 A Shiny App to inspect and compare GLM models for the freMTPL2freq dataset, implementing strong, modular visualization and model diagnostic checks, together with a short R script to generate example GLMs.
+
 To use the model, simply run the app.R (through your preferred means) and put your models in a models/ folder in the same directory
+
 Assumptions and Notes:
  - Models should be poisson, quasipoisson, negative binomial (such as from MASS), or inherit from zeroinfl (from library pscl)
  - Place .rds model files in a "models/" folder next to this app.R (use saveRDS(myModel, "filename.rds") to save the model)
